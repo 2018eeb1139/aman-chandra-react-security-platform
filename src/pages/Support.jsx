@@ -3,7 +3,7 @@ import { Layout } from "@/components/Layout";
 const Support = () => {
   return (
     <Layout
-      title="Projects"
+      title="Support"
       breadcrumbs={["Scans", "Private Assets"]}
       actions={[
         {

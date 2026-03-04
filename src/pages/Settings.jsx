@@ -3,7 +3,7 @@ import { Layout } from "@/components/Layout";
 const Settings = () => {
   return (
     <Layout
-      title="Projects"
+      title="Settings"
       breadcrumbs={["Scans", "Private Assets"]}
       actions={[
         {
