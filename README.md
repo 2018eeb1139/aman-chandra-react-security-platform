@@ -1,16 +1,107 @@
-# React + Vite
+# Security Ops
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A B2B SaaS responsive web application for security platform built with React, Vite, Tailwind CSS, and shadcn/ui components.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Core Functionality
 
-## React Compiler
+- **Dashboard Overview**
+  - Real-time security statistics and metrics
+  - Interactive vulnerability severity charts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Advanced Search & Filtering**
+  - Real-time search across scan names, types, and status
+  - Multi-criteria filtering by scan type and status
+  - Combined search and filter capabilities
+  - Active filter indicators with clear options
 
-## Expanding the ESLint configuration
+- **Scan Details & Analysis**
+  - Live scan console with activity logs
+  - Verification loops tracking
+  - Real-time vulnerability findings
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **Frontend**: React 18 with JavaScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Routing**: React Router DOM
+- **Notification**: React Hot Toast
+- **Icons**: Lucide React
+
+## Project Structure
+
+```
+src/
+├── components/           # Reusable UI components
+│   ├── ui/            # shadcn/ui components
+│   ├── Layout.jsx      # Main layout wrapper
+│   ├── Header.jsx      # Navigation header
+│   └── Sidebar.jsx     # Navigation sidebar
+├── pages/              # Page components
+│   ├── Login.jsx         # Authentication page
+│   ├── Dashboard.jsx      # Main dashboard
+│   ├── ScanDetail.jsx     # Scan details view
+│   ├── Projects.jsx       # Projects management
+│   ├── Schedule.jsx       # Scan scheduling
+│   ├── Settings.jsx       # User settings
+│   ├── Notifications.jsx  # Notification center
+│   └── Support.jsx        # Help & support
+├── data/               # Mock data and constants
+│   └── mockData.js      # Sample data for development
+├── lib/                # Utility functions
+│   └── utils.js         # Helper functions
+└── App.jsx              # Main app component with routing
+```
+
+### UI/UX Features
+
+- **Responsive Sidebar**: Collapsible navigation with user profile
+- **Dark Mode**: Theme toggle with system detection
+
+## Installation & Setup
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Steps
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/2018eeb1139/aman-chandra-react-security-platform
+   cd aman-chandra-react-security-platform
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173` (or the URL shown in your terminal)
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
